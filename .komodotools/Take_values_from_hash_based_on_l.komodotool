@@ -1,0 +1,11 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "Take values from hash based on list of keys", 
+  "value": [
+    "values_from_list [[%ask:Name of hash:h]], [[%ask:Name of unique words list:unique]], [[%ask:How much to show:q.to_i]]!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}
