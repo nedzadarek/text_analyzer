@@ -1,6 +1,6 @@
 load 'analyze.rb'
 puts 'write how many elements to show'; q=gets
-red_cap = File.open("text.txt") 
+red_cap = File.open("text2.txt") 
 	include Analyze
 	content =  red_cap.read
 	#tab = content.downcase.gsub /[^a-z]/, ' ' #/[\.,\"]/, ' '
