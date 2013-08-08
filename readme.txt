@@ -11,6 +11,7 @@ Changelog
 How to use:
 - load 'AnalyzeClass.rb' [make sure you run ruby from classes directory ]
 - a = AnalyzeClass.new 'This some text some some'
+- a.init
 Then you can get:
 > quantity of unique words:
 - a.quantity
