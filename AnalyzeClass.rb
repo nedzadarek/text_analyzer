@@ -76,4 +76,37 @@ class AnalyzeClass
     @unique.each{|x| per<< (percentage x)}
     Hash[@unique.zip per]
   end
+  
+  #adds 2 object and create new object
+  def + obj
+    
+      #@text=text
+      #@textaz
+      #@arr
+      #@unique
+      #@zipped
+      #@count
+      #@hash
+    
+    new=AnalyzeClass.new @text+"\n"+obj.text
+    new.instance_variable_set(:@textaz, @textaz+"\n"+obj.textaz)
+    
+    arr=@arr+obj.arr
+    new.instance_variable_set(:@arr, arr)
+    
+    
+    u=arr.uniq
+    c=u.map {|x| arr.count x}
+    zipped = (u.zip c).sort {|x, y| y[1]<=>x[1]}
+    u=c=[]
+    zipped.each{|x| u << x[0];c <<  x[1]  }
+    #zipped.each{|x| c <<  x[1] }
+    new.instance_variable_set(:@unique, u)
+    new.instance_variable_set(:@count, c)
+    new.instance_variable_set(:@zipped, zipped)
+    new.instance_variable_set(:@hash, Hash[zipped])
+    
+    
+    return new
+  end
 end
