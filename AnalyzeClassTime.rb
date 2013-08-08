@@ -9,6 +9,9 @@ class AnalyzeClassTime
     @zipped
     @count
     @hash
+
+  end
+  def init
     puts "Start: #{Time.now}"
     get_words
     puts "get_words #{Time.now}"

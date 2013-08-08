@@ -9,6 +9,9 @@ class AnalyzeClass
     @zipped
     @count
     @hash
+    
+  end
+  def init
     get_words
     slice_to_symbols
     count_occurrences
