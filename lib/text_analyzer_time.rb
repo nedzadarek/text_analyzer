@@ -1,4 +1,4 @@
-class AnalyzeClassTime
+class TextAnalyzerTime
   attr_accessor :text
   attr_reader :arr, :unique,:textaz, :zipped, :count
   def initialize text

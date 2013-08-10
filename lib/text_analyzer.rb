@@ -1,4 +1,4 @@
-class AnalyzeClass
+class TextAnalyzer
   attr_accessor :text
   attr_reader :arr, :unique,:textaz, :zipped, :count
   def initialize text
@@ -88,7 +88,7 @@ class AnalyzeClass
       #@count
       #@hash
     
-    new=AnalyzeClass.new @text+"\n"+obj.text
+    new=TextAnalyzer.new @text+"\n"+obj.text
     new.instance_variable_set(:@textaz, @textaz+"\n"+obj.textaz)
     
     arr=@arr+obj.arr

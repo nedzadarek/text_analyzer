@@ -7,10 +7,12 @@ Changelog
 22-07-2012:
 - Added AnalyzeClass.rb & AnalyzeClassTime.rb that are classes made of analyze.rb & db.rb
 - *Time.rb shows some info about time
+20-08-2013
+- changed names of class from 'AnalyzeClass.rb' to 'text_analyzer'
 
 How to use:
-- load 'AnalyzeClass.rb' [make sure you run ruby from classes directory ]
-- a = AnalyzeClass.new 'This some text some some'
+- load 'text_analyzer.rb' [make sure you run ruby from classes directory ]
+- a = TextAnalyzer.new 'This some text some some'
 - a.init
 Then you can get:
 > quantity of unique words:
@@ -41,8 +43,11 @@ Then you can get:
 - a.percentages
 => {:some=>0.6, :this=>0.2, :text=>0.2}
 > compare to object
-- a==(AnalyzeClass.new 'This is some text some some')
+- a==(TextAnalyzer.new 'This is some text some some')
 => false
-- a==(AnalyzeClass.new 'This some text some some')
+- a==(TextAnalyzer.new 'This some text some some')
 => true
+> summing objects
+- a2=a+a
+
 
