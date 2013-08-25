@@ -47,7 +47,11 @@ class TextAnalyzer
     @hash ||= Hash[@zipped]
   end
   def to_s
-    'done'
+    n=15
+    %Q^#<#{self.class.name}: #{text.length>n ? text[0...n]+'...' : text}>^
+  end
+  def inspect
+    %Q^#<#{self.class.name} words:#{length} unique:#{quantity}>^
   end
   def == ob
     @text==ob.text

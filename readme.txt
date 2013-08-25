@@ -9,6 +9,8 @@ Changelog
 - *Time.rb shows some info about time
 20-08-2013
 - changed names of class from 'AnalyzeClass.rb' to 'text_analyzer'
+26-08-2013
+- added/changed methods: to_s and inspect
 
 How to use:
 - load 'text_analyzer.rb' [make sure you run ruby from classes directory ]
@@ -49,5 +51,9 @@ Then you can get:
 => true
 > summing objects
 - a2=a+a
+> a.inspect
+=> "#<TextAnalyzer words:5 unique:3>"
+> a.to_s
+=> "#<TextAnalyzer: This some text ...>"
 
 
